@@ -1,12 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <div class="background-container"/>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt=""/>
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <div class="clouds"></div>
     </div>
   );
 }
