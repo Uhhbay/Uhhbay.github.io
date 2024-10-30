@@ -6,8 +6,10 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const links = [
   { name: "Home", path: "/" },
-  { name: "Dashboard", path: "/" },
   { name: "About", path: "/" },
+  { name: "Skills", path: "/" },
+  { name: "Projects", path: "/" },
+  { name: "Experience", path: "/" },
 ];
 
 export default function Navbar() {
@@ -36,14 +38,14 @@ export default function Navbar() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="origin-top fixed left-0 top-16 w-full h-screen sm:hidden bg-white text-gray-800 pb-20"
+            className="origin-top fixed left-0 top-16 w-full h-screen sm:hidden bg-gradient-to-b from-[#1b2735] to-[#090a0f] text-white pb-20"
           >
             <div className="flex flex-col h-full justify-center items-center gap-4">
               {links.map((link, index) => (
                 <Link
                   key={index}
                   to={link.path}
-                  className={`text-4xl ${activeSection === link.name ? "text-sky-600" : "text-gray-800"} hover:text-sky-400`}
+                  className={`text-4xl ${activeSection === link.name ? "text-white" : "text-white"} hover:text-gray-400`}
                   onClick={() => {
                     setActiveSection(link.name);
                     setIsOpen(false);
@@ -57,38 +59,30 @@ export default function Navbar() {
         )}
       </AnimatePresence>
       <motion.div 
-        className="flex items-center justify-between fixed top-0 left-0 h-16 w-full bg-white/70 backdrop-blur-sm shadow-md px-4 sm:px-6"
+        className="flex items-center justify-between fixed top-0 left-0 h-16 w-full bg-transparent backdrop-blur-sm shadow-md px-4 sm:px-6"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
-        <Link to="/" className="flex flex-col text-gray-800">
+        <Link to="/" className="flex flex-col text-white">
           <h1 className="text-xl font-bold">
-            BucketList AI
+            ABHAY
           </h1>
-          <h3 className="text-xs -mt-1">
-            Powered by fetch.ai
-          </h3>
         </Link>
         <button className="sm:hidden" onClick={toggleMenu}>
           <FontAwesomeIcon
-            className={`w-6 h-6 transition ${isOpen ? "text-sky-600" : "text-gray-800"}`}
+            className={`w-6 h-6 transition ${isOpen ? "text-white" : "text-white"}`}
             icon={faBars} 
           />
         </button>
-        <nav className="hidden sm:flex items-center">
+        <nav className="hidden sm:flex items-center pr-40">
           <ul className="flex space-x-3">
             {links.map((link) => (
               <motion.li key={link.path} className="relative">
                 <button
                   className={`px-1 rounded-md ${
-                    activeSection === link.name ? "text-sky-600 font-semibold" : "text-gray-800"
-                  } hover:text-sky-400`}
+                    activeSection === link.name ? "text-white font-semibold" : "text-white"
+                  } hover:text-gray-400`}
                   onClick={() => {
-                    // if (link.path === '/dashboard') {
-                    //   handleDashboard();
-                    // } else {
-                    //   navigate(link.path);
-                    // }
                     navigate(link.path);
                     setActiveSection(link.name);
                   }}
@@ -96,7 +90,7 @@ export default function Navbar() {
                   {link.name}
                   {link.name === activeSection && (
                     <motion.span
-                      className="absolute bottom-0 left-0 w-full h-0.5 bg-sky-600"
+                      className="absolute bottom-0 left-0 w-full h-0.5 bg-white"
                       layoutId="activeSection"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
