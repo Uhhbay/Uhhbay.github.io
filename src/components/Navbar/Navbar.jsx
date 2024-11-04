@@ -45,7 +45,9 @@ export default function Navbar() {
                 <Link
                   key={index}
                   to={link.path}
-                  className={`text-4xl ${activeSection === link.name ? "text-white" : "text-white"} hover:text-gray-400`}
+                  className={`text-4xl ${
+                    activeSection === link.name ? "text-customBlue" : "text-white"
+                  } hover:text-gray-400`}
                   onClick={() => {
                     setActiveSection(link.name);
                     setIsOpen(false);
@@ -64,7 +66,7 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
       >
         <Link to="/" className="flex flex-col text-white">
-          <h1 className="text-xl font-bold">
+          <h1 className="text-2xl font-bold">
             ABHAY
           </h1>
         </Link>
@@ -80,7 +82,7 @@ export default function Navbar() {
               <motion.li key={link.path} className="relative">
                 <button
                   className={`px-1 rounded-md ${
-                    activeSection === link.name ? "text-white font-semibold" : "text-white"
+                    activeSection === link.name ? "text-customBlue font-semibold" : "text-white"
                   } hover:text-gray-400`}
                   onClick={() => {
                     navigate(link.path);
@@ -90,7 +92,7 @@ export default function Navbar() {
                   {link.name}
                   {link.name === activeSection && (
                     <motion.span
-                      className="absolute bottom-0 left-0 w-full h-0.5 bg-white"
+                      className="absolute bottom-0 left-0 w-full h-0.5 bg-customBlue"
                       layoutId="activeSection"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
