@@ -15,7 +15,14 @@
 .content {
   position: relative;
   z-index: 1; 
-  height: 100vh; 
+  height: 85vh; 
   width: 100vw; /* Ensure it's above the background */
   /* Add any additional styling for your content */
+}
+
+@media (max-width: 1280px) { /* Adjust the max-width as needed for your breakpoint */
+  .background-container,
+  .content {
+    height: 120vh; /* Increase the height when the screen is squished */
+  }
 }

@@ -67,7 +67,7 @@ export default function Navbar() {
       >
         <Link to="/" className="flex flex-col text-white">
           <h1 className="text-2xl font-bold">
-            ABHAY
+            AS
           </h1>
         </Link>
         <button className="sm:hidden" onClick={toggleMenu}>

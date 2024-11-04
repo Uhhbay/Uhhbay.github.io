@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         ubuntu: ['Ubuntu', 'sans-serif'],
+        cedarville: ['Cedarville Cursive', 'cursive'], 
       },  
       colors: {
         customBlue: 'rgba(95, 145, 255, 1)',
