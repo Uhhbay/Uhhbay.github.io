@@ -31,6 +31,6 @@ html {
   scroll-behavior: smooth;
 }
 #home {
-  padding-top: 60px; /* Adjust this value based on your navbar height */
-  margin-top: -60px; /* Negative margin to offset the padding */
+  padding-top: 50px; /* Adjust this value based on your navbar height */
+  margin-top: -50px; /* Negative margin to offset the padding */
 }
