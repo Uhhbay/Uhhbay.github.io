@@ -1,25 +1,20 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const links = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/" },
-  { name: "Skills", path: "/" },
-  { name: "Projects", path: "/" },
-  { name: "Experience", path: "/" },
+  { name: "Home", path: "#home" },
+  { name: "About", path: "#about" },
+  { name: "Skills", path: "#skills" },
+  { name: "Projects", path: "#projects" },
+  { name: "Experience", path: "#experience" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
-  const navigate = useNavigate();
-
-  
-
- 
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -42,9 +37,9 @@ export default function Navbar() {
           >
             <div className="flex flex-col h-full justify-center items-center gap-4">
               {links.map((link, index) => (
-                <Link
+                <a
                   key={index}
-                  to={link.path}
+                  href={link.path}
                   className={`text-4xl ${
                     activeSection === link.name ? "text-customBlue" : "text-white"
                   } hover:text-gray-400`}
@@ -54,7 +49,7 @@ export default function Navbar() {
                   }}
                 >
                   {link.name}
-                </Link>
+                </a>
               ))}
             </div>
           </motion.div>
@@ -65,11 +60,11 @@ export default function Navbar() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
-        <Link to="/" className="flex flex-col text-white">
+        <a href="#home" className="flex flex-col text-white">
           <h1 className="text-3xl font-bold">
             A.S.
           </h1>
-        </Link>
+        </a>
         <button className="sm:hidden" onClick={toggleMenu}>
           <FontAwesomeIcon
             className={`w-6 h-6 transition ${isOpen ? "text-white" : "text-white"}`}
@@ -80,14 +75,12 @@ export default function Navbar() {
           <ul className="flex space-x-3">
             {links.map((link) => (
               <motion.li key={link.path} className="relative">
-                <button
+                <a
+                  href={link.path}
                   className={`px-1 rounded-md ${
                     activeSection === link.name ? "text-customBlue font-semibold" : "text-white"
                   } hover:text-gray-400`}
-                  onClick={() => {
-                    navigate(link.path);
-                    setActiveSection(link.name);
-                  }}
+                  onClick={() => setActiveSection(link.name)}
                 >
                   {link.name}
                   {link.name === activeSection && (
@@ -97,7 +90,7 @@ export default function Navbar() {
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
-                </button>
+                </a>
               </motion.li>
             ))}
           </ul>
