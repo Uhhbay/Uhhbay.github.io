@@ -66,8 +66,8 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
       >
         <Link to="/" className="flex flex-col text-white">
-          <h1 className="text-2xl font-bold">
-            AS
+          <h1 className="text-3xl font-bold">
+            A.S.
           </h1>
         </Link>
         <button className="sm:hidden" onClick={toggleMenu}>
