@@ -22,7 +22,7 @@ export default function Home() {
               </span>
             </div>
             <div className="text-center  mt-6">
-              <h1 className="text-gray-700 w-[390px] font-cedarville text-5xl">Abhay Singh</h1>
+              <h1 className="text-gray-700 w-[390px] font-dancing text-6xl">Abhay Singh</h1>
             </div>
           </div>
         </div>

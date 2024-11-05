@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         ubuntu: ['Ubuntu', 'sans-serif'],
         cedarville: ['Cedarville Cursive', 'cursive'], 
+        dancing: ['Dancing Script', 'cursive'], 
       },  
       colors: {
         customBlue: 'rgba(95, 145, 255, 1)',
