@@ -14,7 +14,7 @@ function App() {
       <div id="home" className="content">
         <Home />
       </div>
-      <div id="about" className="content2 justify-center align-center flex h-[90vh] xl:h-[70vh] lg:h-[70vh] md:h-[70vh] bg-gray-600">
+      <div id="about" className="content2 justify-center align-center flex h-[90vh] xl:h-[70vh] lg:h-[70vh] md:h-[70vh]">
         <About />
       </div>  
     </div>
