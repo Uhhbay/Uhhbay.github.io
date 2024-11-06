@@ -34,3 +34,10 @@ html {
   padding-top: 50px; /* Adjust this value based on your navbar height */
   margin-top: -50px; /* Negative margin to offset the padding */
 }
+
+.content2 {
+  position: relative;
+  z-index: 1;  
+  width: 100vw; /* Ensure it's above the background */
+  /* Add any additional styling for your content */
+}
