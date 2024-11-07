@@ -29,6 +29,8 @@ const Skills = ({ sharedSkills, resumeBasicInfo }) => {
       custom={i}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
+      whileHover={{ scale: 1.10 }}
+    //   transition={{ type: "spring", stiffness: 300 }}
       variants={skillVariants}
     >
       <div className="text-center">
@@ -47,6 +49,8 @@ const Skills = ({ sharedSkills, resumeBasicInfo }) => {
       custom={skills.length}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
+      whileHover={{ scale: 1.10 }}
+    //   transition={{ type: "spring", stiffness: 300 }}
       variants={skillVariants}
     >
       <div className="text-center">
@@ -65,6 +69,8 @@ const Skills = ({ sharedSkills, resumeBasicInfo }) => {
       custom={skills.length + 1}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
+      whileHover={{ scale: 1.10 }}
+    //   transition={{ type: "spring", stiffness: 300 }}
       variants={skillVariants}
     >
       <div className="text-center">
