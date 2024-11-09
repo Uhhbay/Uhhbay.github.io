@@ -6,6 +6,10 @@ import About from './components/About/about.jsx';
 import Skills from './components/Skills/skills.jsx';
 import { sharedSkills, resumeBasicInfo } from './components/Skills/skillsData.js';
 import Projects from './components/Projects/porjects.jsx';
+import { resumeProjects, resumeBasicI } from "./components/Projects/projectsData";
+
+
+
 function App() {
   return (
     <div className="App">
@@ -23,7 +27,7 @@ function App() {
         <Skills sharedSkills={sharedSkills} resumeBasicInfo={resumeBasicInfo} />
       </div>
       <div id="projects" className="justify-center align-center flex">
-        <Projects />
+      <Projects />
       </div>
     </div>
   );
