@@ -5,7 +5,7 @@ import Home from './components/Home/home.jsx';
 import About from './components/About/about.jsx';
 import Skills from './components/Skills/skills.jsx';
 import { sharedSkills, resumeBasicInfo } from './components/Skills/skillsData.js';
-import Projects from './components/Projects/porjects.jsx';
+import Projects from './components/Projects/Projects.jsx';
 import { resumeProjects, resumeBasicI } from "./components/Projects/projectsData";
 
 

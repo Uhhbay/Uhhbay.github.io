@@ -17,6 +17,18 @@ const resumeBasicI = {
       description: "Description of project two.",
       images: ["", ""],
     },
+    {
+      title: "Project Two",
+      startDate: "March 2023",
+      description: "Description of project two.",
+      images: ["", ""],
+    },
+    {
+      title: "Project Two",
+      startDate: "March 2023",
+      description: "Description of project two.",
+      images: ["", ""],
+    },
     // Add more projects as needed
   ];
   
