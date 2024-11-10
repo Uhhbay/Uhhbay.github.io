@@ -26,7 +26,7 @@ function App() {
       <div id="skills" className="justify-center align-center flex">
         <Skills sharedSkills={sharedSkills} resumeBasicInfo={resumeBasicInfo} />
       </div>
-      <div id="projects" className="justify-center align-center flex">
+      <div id="projects" className="justify-center align-center flex xl:mt-16">
       <Projects />
       </div>
     </div>
