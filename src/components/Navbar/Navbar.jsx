@@ -56,7 +56,7 @@ export default function Navbar() {
         )}
       </AnimatePresence>
       <motion.div 
-        className="flex items-center justify-between fixed top-0 left-0 h-16 w-full bg-transparent backdrop-blur-sm shadow-md px-4 sm:px-6"
+        className="flex items-center justify-between fixed top-0 left-0 h-16 w-full bg-[rgba(0,0,0,0.1)] backdrop-blur-md shadow-md px-4 sm:px-6"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
