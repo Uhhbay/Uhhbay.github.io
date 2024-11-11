@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,6 +15,16 @@ const links = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    // Cleanup function to remove the class on unmount
+    return () => document.body.classList.remove("overflow-hidden");
+  }, [isOpen]);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -33,7 +43,7 @@ export default function Navbar() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="origin-top fixed left-0 top-16 w-full h-screen sm:hidden bg-gradient-to-b from-[#1b2735] to-[#090a0f] text-white pb-20"
+            className="origin-top fixed left-0 top-16 w-full h-screen sm:hidden bg-[rgba(0,0,0,0.5)] backdrop-blur-md text-white pb-20"
           >
             <div className="flex flex-col h-full justify-center items-center gap-4">
               {links.map((link, index) => (
@@ -56,7 +66,7 @@ export default function Navbar() {
         )}
       </AnimatePresence>
       <motion.div 
-        className="flex items-center justify-between fixed top-0 left-0 h-16 w-full bg-[rgba(0,0,0,0.1)] backdrop-blur-md shadow-md px-4 sm:px-6"
+        className="flex items-center justify-between fixed top-0 left-0 h-16 w-full bg-[rgba(0,0,0,0.5)] backdrop-blur-md shadow-md px-4 sm:px-6"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >

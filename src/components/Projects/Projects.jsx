@@ -21,11 +21,11 @@ export default function Projects() {
     };
 
     return (
-        <div className="flex flex-col items-center max-w-screen-xl mx-auto z-10">
+        <div className="flex flex-col items-center max-w-screen-full mx-auto z-10">
             <h1 className="text-white text-4xl font-ubuntu pt-32 mb-6">Projects</h1>
             <div className="w-[350px] h-[1px] bg-gray-300 mb-16"></div>
             <motion.div
-                className="projects-container grid grid-cols-1 xl:grid-cols-2 gap-x-20 gap-y-0"
+                className="projects-container grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 xl:grid-cols-3 gap-x-12 gap-y-0"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.1 }}
@@ -39,18 +39,18 @@ export default function Projects() {
                         variants={itemVariants} // Apply item variants
                         transition={{ duration: 0.5 }}
                     >
-                        <div className="h-[530px] w-[530px] xl:h-[530px] xl:w-[530px] bg-gray-700 mr-0 mb-20 transition-all duration-300 hover:shadow-2xl hover:shadow-gray-500 hover:scale-105 hover:bg-white group">
+                        <div className="h-[380px] w-[400px] bg-gray-700 mr-0 mb-20 transition-all duration-300 hover:shadow-2xl hover:shadow-gray-500 hover:scale-105 hover:bg-white group">
                             <div className="flex items-center justify-center">
                                 <span style={{ cursor: "auto" }}>
                                     <img
                                         src={profilepic}
                                         alt="Avatar placeholder"
-                                        className="h-[360px] w-[475px] mt-[25px]"
+                                        className="h-[265px] w-[360px] mt-[25px]"
                                     />
                                 </span>
                             </div>
-                            <div className="flex flex-col items-center mt-10">
-                                <h1 className="text-white text-center w-full font-ubuntu text-4xl group-hover:text-black">{project.title}</h1>
+                            <div className="flex flex-col items-center mt-6">
+                                <h1 className="text-white text-center w-full font-ubuntu text-2xl group-hover:text-black">{project.title}</h1>
                             </div>
                         </div>
                     </motion.div>
