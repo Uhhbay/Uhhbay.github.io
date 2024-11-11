@@ -10,7 +10,7 @@ export default function Projects() {
     const containerVariants = {
         visible: {
             transition: {
-                staggerChildren: 0.3, // Stagger the appearance of children
+                staggerChildren: 0.5, // Stagger the appearance of children
             },
         },
     };
