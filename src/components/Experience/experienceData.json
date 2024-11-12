@@ -1,0 +1,24 @@
+{
+    "basic_info": {
+      "section_name": {
+        "experience": "Experience"
+      }
+    },
+    "experience": [
+      {
+        "title": "Software Engineer",
+        "company": "Tech Corp",
+        "years": "2021 - Present",
+        "mainTech": ["JavaScript", "React"],
+        "technologies": ["HTML", "CSS", "JavaScript", "React", "Node.js"]
+      },
+      {
+        "title": "Intern",
+        "company": "Web Solutions",
+        "years": "2020 - 2021",
+        "mainTech": ["Python", "Django"],
+        "technologies": ["Python", "Django", "SQL"]
+      }
+    ]
+  }
+  
