@@ -2,6 +2,7 @@ import { useRef } from "react";
 import profilepic from "../../images/profilepic.jpeg";
 import { resumeProjects } from "./projectsData.js";
 import { motion, useScroll, useTransform } from "framer-motion";
+import BucketList from "../../images/BucketListDashboard.png";
 
 // Individual Project Component with scroll animations
 function Project({ project }) {
@@ -25,9 +26,9 @@ function Project({ project }) {
                 <div className="flex items-center justify-center">
                     <span style={{ cursor: "auto" }}>
                         <img
-                            src={profilepic}
+                            src={project.images}
                             alt="Avatar placeholder"
-                            className="h-[265px] w-[360px] mt-[25px]"
+                            className="h-[265px] w-[360px] mt-[25px] object-cover"
                         />
                     </span>
                 </div>
