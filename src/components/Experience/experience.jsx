@@ -20,7 +20,7 @@ const Experience = ({ resumeExperience, resumeBasicInfo }) => {
     // Render each timeline element
     return (
       <VerticalTimelineElement
-        className="vertical-timeline-element--workxs mb-8 "
+        className="vertical-timeline-element--workxs 2xl:w-[600px] max-w-full mb-8 "
         date={years}
         iconStyle={{
           background: "#4A4A4A",
@@ -31,7 +31,7 @@ const Experience = ({ resumeExperience, resumeBasicInfo }) => {
         icon={<i className="fab fa-angular experience-icon"></i>}
         key={i}
       >
-        <h3 className="vertical-timeline-element-title text-left">{title}</h3>
+        <h3 className="vertical-timeline-element-title text-left w-[600px]">{title}</h3>
         <h4 className="vertical-timeline-element-subtitle text-left">{company}</h4>
         
         {/* Added technologies list */}
@@ -46,12 +46,12 @@ const Experience = ({ resumeExperience, resumeBasicInfo }) => {
 
   return (
     <section id="resume" className="pb-5">
-      <div className="container mx-auto">
+      <div className=" mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-white">{sectionName}</h1>
         </div>
       </div>
-      <div className="container mx-auto w-[600px] md:w-[600px] lg:w-[600px]">
+      <div className="mx-auto w-[600px] md:w-[600px] lg:w-[600px]">
         <VerticalTimeline className="w-[600px]">
           {work}
           <VerticalTimelineElement
