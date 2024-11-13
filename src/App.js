@@ -8,7 +8,7 @@ import { sharedSkills, resumeBasicInfo } from './components/Skills/skillsData.js
 import Projects from './components/Projects/Projects.jsx';
 import { resumeProjects, resumeBasicI } from "./components/Projects/projectsData";
 import Experience from "./components/Experience/experience.jsx"
-import experienceData from "./components/Experience/experienceData.json"
+import experienceData from "./components/Experience/experienceData.js"
 import Footer from "./components/Footer/footer.jsx"
 
 

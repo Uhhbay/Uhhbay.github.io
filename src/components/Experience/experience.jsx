@@ -1,33 +1,29 @@
 import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import Badge from "react-bootstrap/Badge";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
 const Experience = ({ resumeExperience, resumeBasicInfo }) => {
-  // Ensure that data is present
   if (!resumeExperience || !resumeBasicInfo) return null;
 
-  // Extract section name
   const { section_name: { experience: sectionName } = {} } = resumeBasicInfo;
 
-  // Map over experience data
   const work = resumeExperience.map((work, i) => {
-    const { title, company, years, technologies } = work;
-
-    // Determine if the element is on the left or right
-    const isLeft = i % 2 === 0; // Left if index is even, right if odd
+    const { title, company, years, technologies, icon } = work;
+    const isLeft = i % 2 === 0;
 
     return (
       <VerticalTimelineElement
         className={`vertical-timeline-element--work mb-8 ${
-          isLeft ? "xl-custom:pr-12" : "xl-custom:pl-12" // Padding on opposite side for consistent spacing
+          isLeft ? "xl-custom:pr-12" : "xl-custom:pl-12"
         }`}
         date={
-          <div className={`xl-custom:text-white font-bold font-ubuntu text-black ${isLeft ? "xl-custom:pl-14" : "xl-custom:pr-14"}`}>
+          <div
+            className={`xl-custom:text-white font-bold font-ubuntu text-black ${
+              isLeft ? "xl-custom:pl-14" : "xl-custom:pr-14"
+            }`}
+          >
             {years}
           </div>
         }
@@ -36,20 +32,19 @@ const Experience = ({ resumeExperience, resumeBasicInfo }) => {
           color: "#fff",
           textAlign: "center",
         }}
-        verticalLineStyle={{ background: "" }}
-        icon={<i className="fab fa-angular experience-icon"></i>}
+        verticalLineStyle={{ background: "#4A4A4A" }}
+        icon={<img src={icon} alt={`${title} icon`} className="h-10 w-10 xl-custom:h-16 xl-custom:w-16 xl-custom:pb-1 rounded-full" />} // Use the icon here
         key={i}
       >
         <h3 className="vertical-timeline-element-title text-lg font-bold font-ubuntu text-left max-w-[600px] xl-custom:max-w-[700px]">
           {title}
         </h3>
-        <h4 className="vertical-timeline-element-subtitle font-ubuntu text-md text-left">{company}</h4>
-
-        {/* Added technologies list */}
+        <h4 className="vertical-timeline-element-subtitle font-ubuntu text-md text-left">
+          {company}
+        </h4>
         <ul className="list-disc pl-5 mt-2 text-sm font-ubuntu">
-          {technologies && technologies.map((tech, index) => (
-            <li key={index}>{tech}</li> // Replace with descriptions later
-          ))}
+          {technologies &&
+            technologies.map((tech, index) => <li key={index}>{tech}</li>)}
         </ul>
       </VerticalTimelineElement>
     );
@@ -59,7 +54,9 @@ const Experience = ({ resumeExperience, resumeBasicInfo }) => {
     <section id="resume" className="pb-5">
       <div className="max-w-[800px] mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-white text-4xl font-ubuntu pt-12 mb-6">{sectionName}</h1>
+          <h1 className="text-white text-4xl font-ubuntu pt-12 mb-6">
+            {sectionName}
+          </h1>
         </div>
         <div className="w-[350px] h-[1px] bg-gray-300 mb-16 mx-auto"></div>
       </div>
@@ -72,7 +69,7 @@ const Experience = ({ resumeExperience, resumeBasicInfo }) => {
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fas fa-hourglass-start mx-auto experience-icon"></i>}
+            icon={<i className="fas fa-hourglass-start fa-xl xl-custom:mt-7 mt-5 mx-auto experience-icon rounded-full"></i>}
           />
         </VerticalTimeline>
       </div>
