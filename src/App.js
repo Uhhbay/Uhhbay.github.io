@@ -7,7 +7,9 @@ import Skills from './components/Skills/skills.jsx';
 import { sharedSkills, resumeBasicInfo } from './components/Skills/skillsData.js';
 import Projects from './components/Projects/Projects.jsx';
 import { resumeProjects, resumeBasicI } from "./components/Projects/projectsData";
-
+import Experience from "./components/Experience/experience.jsx"
+import experienceData from "./components/Experience/experienceData.json"
+import Footer from "./components/Footer/footer.jsx"
 
 
 function App() {
@@ -29,6 +31,18 @@ function App() {
       <div id="projects" className="justify-center align-center flex xl:mt-16">
       <Projects />
       </div>
+      <div id="experience" className="conetent2 mt-16">
+
+        <Experience
+          resumeExperience={experienceData.experience}
+          resumeBasicInfo={experienceData.basic_info}
+        />
+
+      </div>
+      <div className="content2">
+      <Footer/>
+      </div>
+
     </div>
   );
 }

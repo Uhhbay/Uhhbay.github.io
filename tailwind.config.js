@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         customBlue: 'rgba(95, 145, 255, 1)',
       },
+      screens: {
+        'xl-custom': '1170px', 
+      },
     },
   },
   plugins: [],

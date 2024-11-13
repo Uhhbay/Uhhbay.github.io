@@ -12,24 +12,36 @@ const resumeBasicI = {
       images: ["", ""], 
     },
     {
-      title: "Project Two",
-      startDate: "March 2023",
+      title: "BucketList AI",
+      startDate: "October 2024",
+      description: "Bucket List AI helps users turn their travel dreams into reality by intelligently planning trips based on their interests. First, it analyzes the items the user adds to their \"bucket\" list, such as destinations or activities. Then, it scans for flights from the user’s location and identifies options that are cheaper than usual.",
+      images: ["", ""],
+    },
+    {
+      title: "Iceman",
+      startDate: "May 2023",
       description: "Description of project two.",
       images: ["", ""],
     },
     {
-      title: "Project Two",
-      startDate: "March 2023",
-      description: "Description of project two.",
+      title: "Content Management System",
+      startDate: "May 2024",
+      description: "",
       images: ["", ""],
     },
     {
-      title: "Project Two",
-      startDate: "March 2023",
-      description: "Description of project two.",
+      title: "SpringforCoffee",
+      startDate: "April 2023",
+      description: "",
       images: ["", ""],
     },
-    // Add more projects as needed
+    {
+      title: "Melanin Flourish",
+      startDate: "June 2024",
+      description: "",
+      images: ["", ""],
+    },
+
   ];
   
   export { resumeBasicI, resumeProjects };
