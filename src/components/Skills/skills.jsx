@@ -84,7 +84,7 @@ const Skills = ({ sharedSkills, resumeBasicInfo }) => {
 
   return (
     <div className="flex flex-col items-center max-w-screen-lg mx-auto" ref={ref}>
-      <h1 className="text-white text-4xl font-ubuntu pt-28 mb-6">
+      <h1 className="text-white text-5xl font-bebas pt-28 mb-6">
         Skills
       </h1>
       <div className="w-[350px] h-[1px] bg-gray-300"></div>

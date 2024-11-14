@@ -39,7 +39,7 @@ const Experience = ({ resumeExperience, resumeBasicInfo }) => {
         <h3 className="vertical-timeline-element-title text-lg font-bold font-ubuntu text-left max-w-[600px] xl-custom:max-w-[700px]">
           {title}
         </h3>
-        <h4 className="vertical-timeline-element-subtitle font-ubuntu text-md text-left">
+        <h4 className="vertical-timeline-element-subtitle font-bebas text-xl text-left">
           {company}
         </h4>
         <ul className="list-disc pl-5 mt-2 text-sm font-ubuntu">
@@ -53,8 +53,8 @@ const Experience = ({ resumeExperience, resumeBasicInfo }) => {
   return (
     <section id="resume" className="pb-5">
       <div className="max-w-[800px] mx-auto">
-        <div className="text-center mb-8">
-          <h1 className="text-white text-4xl font-ubuntu pt-16 mb-6">
+        <div className="text-center mb-8 z-20">
+          <h1 className="text-white text-5xl font-bebas pt-16 mb-6 z-20">
             {sectionName}
           </h1>
         </div>

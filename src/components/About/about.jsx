@@ -10,7 +10,7 @@ export default function About() {
             transition={{ duration: 0.25 }}
             viewport={{ once: true, amount: 0.25 }}
         >
-            <h1 className="text-white text-4xl font-ubuntu  pt-28 mb-6">About Me</h1>
+            <h1 className="text-white text-5xl font-bebas  pt-28 mb-6">About Me</h1>
             <div className="w-[400px] h-[1px] bg-gray-300"></div>
             <div className="bg-gray-800 text-gray-100 p-6 rounded-sm mx-auto w-[500px] mt-28 xl:w-[800px] lg:w-[800px] md:w-[700px] border border-gray-600">
                 <p className="text-xl">

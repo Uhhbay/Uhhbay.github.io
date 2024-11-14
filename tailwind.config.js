@@ -9,6 +9,7 @@ module.exports = {
         ubuntu: ['Ubuntu', 'sans-serif'],
         cedarville: ['Cedarville Cursive', 'cursive'], 
         dancing: ['Dancing Script', 'cursive'], 
+        bebas: ['Bebas Neue', 'sans-serif']
       },  
       colors: {
         customBlue: 'rgba(95, 145, 255, 1)',
