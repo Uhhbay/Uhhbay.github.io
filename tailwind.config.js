@@ -16,6 +16,8 @@ module.exports = {
       },
       screens: {
         'xl-custom': '1170px', 
+        'xl-custom2': '1280px', 
+        'md-lg': { 'min': '1170px', 'max': '1280px' },
       },
     },
   },

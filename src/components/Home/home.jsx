@@ -26,10 +26,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-full w-full xl:w-1/2 bg-transparent flex items-center justify-center order-2 xl:order-1 animate-text">
-          <div className="w-[455px] xl:w-[700px] ml-0 xl:ml-48 xl:pr-48 pb-32 text-left">
+        <div className="h-full w-full xl:w-3/4 bg-transparent flex items-center justify-center order-2 xl:order-1 animate-text">
+          <div className="w-[455px] xl:w-[800px] ml-0 xl:ml-48 xl:pr-48 pb-32 text-left">
             <h1 className="text-white text-4xl mb-4 font-ubuntu">Hello,</h1>
-            <h1 className="text-white text-4xl font-ubuntu mb-20"> I'm {` `}
+            <h1 className="text-white text-4xl font-ubuntu mb-20"> I'm { }
               <TypingEffect
                 text={[" Abhay Singh", " a Full Stack Developer", "a lifelong learner"]}
                 speed={100}  // typing speed in ms
@@ -73,4 +73,3 @@ export default function Home() {
       </section>
     )
 }
-

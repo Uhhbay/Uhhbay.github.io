@@ -32,7 +32,7 @@ html {
 }
 #home {
   padding-top: 50px; /* Adjust this value based on your navbar height */
-  margin-top: -50px; /* Negative margin to offset the padding */
+   /* Negative margin to offset the padding */
 }
 
 .content2 {
@@ -40,4 +40,9 @@ html {
   z-index: 1;  
   width: 100vw; /* Ensure it's above the background */
   /* Add any additional styling for your content */
+}
+
+.footer-sec {
+  z-index: 16;
+  position: relative;
 }
