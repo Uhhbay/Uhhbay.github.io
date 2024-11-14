@@ -54,7 +54,7 @@ const Experience = ({ resumeExperience, resumeBasicInfo }) => {
     <section id="resume" className="pb-5">
       <div className="max-w-[800px] mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-white text-4xl font-ubuntu pt-12 mb-6">
+          <h1 className="text-white text-4xl font-ubuntu pt-16 mb-6">
             {sectionName}
           </h1>
         </div>

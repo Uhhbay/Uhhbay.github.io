@@ -53,7 +53,7 @@ export default function Home() {
               <FontAwesomeIcon icon={faDownload} className="ml-2" />
             </button>
             <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-customBlue"> 
-              <a href="/" target="_blank" rel="noopener noreferrer">
+              <a href="#contact" rel="noopener noreferrer">
                 Contact Me
               </a>
             </button>

@@ -41,6 +41,9 @@ function App() {
       </div>
       <div className="content2">
       <Footer/>
+      <div id="contact">
+        {/* Contact information or form goes here */}
+      </div>
       </div>
 
     </div>
