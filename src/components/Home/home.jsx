@@ -42,36 +42,32 @@ export default function Home() {
             <p className="text-white text-lg font-ubuntu">I am a Full Stack Developer with a passion for
                Artificial Intelligence, Machine Learning, and Application Development. I am a lifelong learner and I am always looking for new
                  challenges and opportunities to grow.</p>
-            <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 hover:bg-white hover:text-customBlue">
-              <a 
-                href="https://docs.google.com/document/d/175HrAfWACDZBp7tJiKOD-_aGr6Yb3WHCob_NtTaXEXo/edit?usp=sharing" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+            <a href="https://docs.google.com/document/d/175HrAfWACDZBp7tJiKOD-_aGr6Yb3WHCob_NtTaXEXo/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 hover:bg-white hover:text-customBlue">
                 Resume
-              </a>
-              <FontAwesomeIcon icon={faDownload} className="ml-2" />
-            </button>
-            <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-customBlue"> 
-              <a href="#contact" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faDownload} className="ml-2" />
+              </button>
+            </a>
+            <a href="#contact" rel="noopener noreferrer">
+              <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-customBlue"> 
                 Contact Me
-              </a>
-            </button>
-            <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-gray-800"> 
-              <a href="https://github.com/Uhhbay" target="_blank" rel="noopener noreferrer">
+              </button>
+            </a>
+            <a href="https://github.com/Uhhbay" target="_blank" rel="noopener noreferrer">
+              <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-gray-800"> 
                 <FontAwesomeIcon icon={faGithub} className="" size="lg" />
-              </a>
-            </button>
-            <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-customBlue"> 
-              <a href="https://www.linkedin.com/in/246abhaysingh/" target="_blank" rel="noopener noreferrer">
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/246abhaysingh/" target="_blank" rel="noopener noreferrer">
+              <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-customBlue"> 
                 <FontAwesomeIcon icon={faLinkedin} className="" size="lg" />
-              </a>
-            </button>
-            <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-pink-500"> 
-              <a href="https://www.instagram.com/uhh_bay/" target="_blank" rel="noopener noreferrer">
+              </button>
+            </a>
+            <a href="https://www.instagram.com/uhh_bay/" target="_blank" rel="noopener noreferrer">
+              <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-pink-500"> 
                 <FontAwesomeIcon icon={faInstagram} className="" size="lg" />
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>  
       </section>
