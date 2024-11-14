@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,6 +15,7 @@ const links = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
+  const sectionRefs = useRef({}); // Track section refs
 
   useEffect(() => {
     if (isOpen) {
@@ -22,9 +23,37 @@ export default function Navbar() {
     } else {
       document.body.classList.remove("overflow-hidden");
     }
-    // Cleanup function to remove the class on unmount
     return () => document.body.classList.remove("overflow-hidden");
   }, [isOpen]);
+
+  // Create refs for each section
+  useEffect(() => {
+    sectionRefs.current = links.reduce((acc, link) => {
+      acc[link.name] = document.querySelector(link.path);
+      return acc;
+    }, {});
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(
+              Object.keys(sectionRefs.current).find(
+                (key) => sectionRefs.current[key] === entry.target
+              )
+            );
+          }
+        });
+      },
+      { threshold: 0.6 } // Adjust as needed for better section detection
+    );
+
+    Object.values(sectionRefs.current).forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -71,9 +100,7 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
       >
         <a href="#home" className="flex flex-col text-white">
-          <h1 className="text-3xl font-bold">
-            A.S.
-          </h1>
+          <h1 className="text-3xl font-bold">A.S.</h1>
         </a>
         <button className="sm:hidden" onClick={toggleMenu}>
           <FontAwesomeIcon
