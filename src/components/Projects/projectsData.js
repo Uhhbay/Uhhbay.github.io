@@ -3,6 +3,7 @@ import etaMessengerImage from "../../images/eta2.png";
 import cmsImage from "../../images/cms.png";
 import mfa from "../../images/mfa.png";
 import sfc from "../../images/sfc.png";
+import ICMNG from "../../images/icmng.png";
 
 const resumeBasicI = {
     section_name: {
@@ -21,7 +22,7 @@ const resumeBasicI = {
       title: "Iceman",
       startDate: "May 2023",
       description: "Description of project two.",
-      images: ["", ""],
+      images: ICMNG,
     },
     {
       title: "Melanin Flourish",
