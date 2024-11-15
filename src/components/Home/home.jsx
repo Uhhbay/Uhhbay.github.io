@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
         <div className="h-full w-full xl:w-3/4 bg-transparent flex items-center justify-center order-2 xl:order-1 animate-text">
-          <div className="w-[455px] xl:w-[800px] ml-0 xl:ml-48 xl:pr-48 pb-32 text-left">
+          <div className="w-[415px] sm:w-[455px] xl:w-[800px] ml-0 xl:ml-48 xl:pr-48 pb-32 text-left">
             <h1 className="text-white text-4xl mb-4 font-ubuntu">Hello,</h1>
             <h1 className="text-white text-4xl font-ubuntu mb-20"> I'm { }
               <TypingEffect
@@ -43,28 +43,28 @@ export default function Home() {
                Artificial Intelligence, Machine Learning, and Application Development. I am a lifelong learner and I am always looking for new
                  challenges and opportunities to grow.</p>
             <a href="https://docs.google.com/document/d/175HrAfWACDZBp7tJiKOD-_aGr6Yb3WHCob_NtTaXEXo/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 hover:bg-white hover:text-customBlue">
+              <button className="bg-gray-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-md mt-10 hover:bg-white hover:text-customBlue">
                 Resume
                 <FontAwesomeIcon icon={faDownload} className="ml-2" />
               </button>
             </a>
             <a href="#contact" rel="noopener noreferrer">
-              <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-customBlue"> 
+              <button className="bg-gray-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-customBlue"> 
                 Contact Me
               </button>
             </a>
             <a href="https://github.com/Uhhbay" target="_blank" rel="noopener noreferrer">
-              <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-gray-800"> 
+              <button className="bg-gray-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-gray-800"> 
                 <FontAwesomeIcon icon={faGithub} className="" size="lg" />
               </button>
             </a>
             <a href="https://www.linkedin.com/in/246abhaysingh/" target="_blank" rel="noopener noreferrer">
-              <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-customBlue"> 
+              <button className="bg-gray-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-customBlue"> 
                 <FontAwesomeIcon icon={faLinkedin} className="" size="lg" />
               </button>
             </a>
             <a href="https://www.instagram.com/uhh_bay/" target="_blank" rel="noopener noreferrer">
-              <button className="bg-gray-600 text-white px-4 py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-pink-500"> 
+              <button className="bg-gray-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-md mt-10 ml-4 hover:bg-white hover:text-pink-500"> 
                 <FontAwesomeIcon icon={faInstagram} className="" size="lg" />
               </button>
             </a>

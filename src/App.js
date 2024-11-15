@@ -19,7 +19,7 @@ function App() {
       <div className="background-container">
         <ShootingStars />
       </div>
-      <div id="home" className="footer-sec">
+      <div id="home" className="footer-sec ">
         <Home />
       </div>
       <div id="about" className="footer-sec justify-center align-center mt-40 flex h-[90vh] xl:h-[70vh] lg:h-[70vh] md:h-[70vh]">
