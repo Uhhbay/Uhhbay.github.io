@@ -14,7 +14,7 @@ export default function About() {
             <div className="w-[350px] h-[1px] bg-gray-300"></div>
             <div className="bg-gray-800 text-gray-100 p-6 rounded-sm mx-auto w-[400px] text-center sm:text-left sm:w-[500px] mt-28 xl:w-[800px] lg:w-[800px] md:w-[700px] border border-gray-600">
                 <p className="text-xl">
-                    I am currently a student pursuing a B.S. in Computer Science and Minor in Informatics
+                    I am currently a student pursuing a B.S. in Computer Science 
                     at the University of California, Irvine. I transferred from El Camino College, where
                     I earned a Associates in Mathematics. Computer Science is a passion of mine because
                     it requires me to constantly learn and adapt to create new and effective solutions
