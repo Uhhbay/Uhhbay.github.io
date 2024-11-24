@@ -2,6 +2,7 @@
   import CN from "../../images/cn.jpg";
   import MBLY from "../../images/mbly.png";
   import UCIE from "../../images/ucie.png";
+  import DBUCI from "../../images/dbuci.jpeg";
 
   const experienceData = {
     basic_info: {
@@ -10,6 +11,16 @@
       },
     },
     experience: [
+      {
+        title: "AI/ML Researcher",
+        company: "Donald Bren School of ICS",
+        years: "November 2024 - Present",
+        mainTech: ["Python", "Django"],
+        technologies: [
+          "Just started!",
+        ],
+        icon: DBUCI,
+      },
       {
         title: "Software Programming Instructor",
         company: "CODE NINJAS",
