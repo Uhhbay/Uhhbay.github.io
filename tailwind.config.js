@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'custom': '34px', // 10px
+      },
       fontFamily: {
         ubuntu: ['Ubuntu', 'sans-serif'],
         cedarville: ['Cedarville Cursive', 'cursive'], 

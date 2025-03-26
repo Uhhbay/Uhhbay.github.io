@@ -4,6 +4,7 @@ import cmsImage from "../../images/cms.png";
 import mfa from "../../images/mfa.png";
 import sfc from "../../images/sfc.png";
 import ICMNG from "../../images/icmng.png";
+import neuro from "../../images/neuro.jpg";
 
 const resumeBasicI = {
     section_name: {
@@ -12,6 +13,13 @@ const resumeBasicI = {
   };
   
   const resumeProjects = [
+    {
+      title: "Neuroflow",
+      startDate: "January 2025",
+      description: "Developed an application that does video analysis of a person's finger pressed against their camera with the flash on for 15 seconds in order to get PPG Data and correlate that to stress levels.",
+      images: neuro,
+      link: "https://github.com/Uhhbay/NeuroFlow",
+    },
     {
       title: "BucketList AI",
       startDate: "October 2024",
@@ -47,14 +55,6 @@ const resumeBasicI = {
       images: etaMessengerImage, 
       link: "https://github.com/Uhhbay/ETA-messaging",
     },
-    {
-      title: "SpringforCoffee",
-      startDate: "April 2023",
-      description: "Developed an unofficial website for a business, enhancing its online presence with a modern, user-friendly design. Integrated the Google Maps API to provide customers with interactive location details, improving accessibility and engagement. The site offers streamlined navigation and valuable resources to support the business's outreach.",
-      images: sfc,
-      link: "https://github.com/Uhhbay/springforcoffeeUnofficial",
-    },
-
   ];
   
   export { resumeBasicI, resumeProjects };

@@ -3,6 +3,7 @@
   import MBLY from "../../images/mbly.png";
   import UCIE from "../../images/ucie.png";
   import DBUCI from "../../images/dbuci.jpeg";
+  import UCISOC from "../../images/UCISOC.jpg";
 
   const experienceData = {
     basic_info: {
@@ -12,12 +13,24 @@
     },
     experience: [
       {
+        title: "Software Engineer Intern",
+        company: "UC Irvine School of Social Sciences - LDN Lab",
+        years: "December 2024 - March 2025",
+        mainTech: ["TypeScript", "Phaser", "Socket.IO", "PostgreSQL"],
+        technologies: [
+          "Led a team of 5 in the development of a multiplayer game from scratch using the Phaser framework and TypeScript, integrating PostgreSQL for user authentication and preference storage; reduced latency by 35% with Socket.IO",
+          "Deployed the application on Prolific for large-scale participant testing, collecting data from 500+ users",
+        ],
+        icon: UCISOC,
+      },
+      {
         title: "AI/ML Researcher",
         company: "Donald Bren School of ICS",
         years: "November 2024 - Present",
-        mainTech: ["Python", "Django"],
+        mainTech: ["Python", "Pytorch", "SQL"],
         technologies: [
-          "Just started!",
+          "Conducted experiments on large language models, achieving a 50% improvement in understanding the study's hypotheses and theoretical framework",
+          "Optimized data integrity using SQL to audit and clean outdated records from critical databases, leading to an 80% reduction in system errors",
         ],
         icon: DBUCI,
       },
@@ -46,7 +59,7 @@
       {
         title: "Information Specialist",
         company: "MOBALYTICS",
-        years: "April 2024 - Present",
+        years: "April 2024 - November 2024",
         mainTech: ["Python", "Django"],
         technologies: [
           "Updated Mobalytics Valorant database 3 times per month, increasing platform engagement by 10%, bolstering platform relevance within the competitive gaming community",
