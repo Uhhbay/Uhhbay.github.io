@@ -1,5 +1,5 @@
 import BucketList from "../../images/BucketListDashboard.png";
-import etaMessengerImage from "../../images/eta2.png";
+import leetbro from "../../images/leetbro.png";
 import cmsImage from "../../images/cms.png";
 import mfa from "../../images/mfa.png";
 import sfc from "../../images/sfc.png";
@@ -13,6 +13,13 @@ const resumeBasicI = {
   };
   
   const resumeProjects = [
+    {
+      title: "LeetBro",
+      startDate: "April 2025",
+      description: "When practicing LeetCode questions, we realized existing hints often don't help when you're stuck without understanding the underlying approach. We wanted a smarter, more personalized way to teach problem-solving techniques - not just hand over answers. We built LeetBro to act as your Brogrammer, giving hints/teaching algorithms when needed, as well as guiding you without solving the problem for you.",
+      images: leetbro, 
+      link: "https://github.com/Uhhbay/LeetBro",
+    },
     {
       title: "Neuroflow",
       startDate: "January 2025",
@@ -47,13 +54,6 @@ const resumeBasicI = {
       description: "Developed a streamlined Content Management System for a social media platform, integrating MySQL and PHP to enable efficient CRUD functionality. Designed an intuitive interface for content creation, allowing seamless posting and management. Completed within 36 hours, this project highlights strong database integration and rapid development capabilities.",
       images: cmsImage,
       link: "https://github.com/Uhhbay/CMS-with-CRUD",
-    },
-    {
-      title: "ETA Messanger",
-      startDate: "January 2023",
-      description: "Estimated Time of Arrival messaging system that uses Twilio API alongside Goggle Maps API in order to send accurate real time ETA's about you commute to certain set locations through SMS",
-      images: etaMessengerImage, 
-      link: "https://github.com/Uhhbay/ETA-messaging",
     },
   ];
   
