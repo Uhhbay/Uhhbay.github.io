@@ -117,8 +117,8 @@ Feel free to browse through my portfolio and reach out if you have any questions
 ## 📨 Contact
 
 
-- GitHub: [github.com/your-username](https://github.com/Uhhbay)
-- LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/246abhaysingh)
+- GitHub: [github.com/Uhhbay](https://github.com/Uhhbay)
+- LinkedIn: [linkedin.com/in/246abhaysingh](https://www.linkedin.com/in/246abhaysingh)
 
 ---
 
