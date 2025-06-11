@@ -4,7 +4,7 @@
   import UCIE from "../../images/ucie.png";
   import DBUCI from "../../images/dbuci.jpeg";
   import UCISOC from "../../images/UCISOC.jpg";
-  import shopify from "../../images/shoppng.png";
+  import shopify from "../../images/Shopifylogo.webp";
 
   const experienceData = {
     basic_info: {
