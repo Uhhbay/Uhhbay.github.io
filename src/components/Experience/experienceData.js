@@ -4,6 +4,7 @@
   import UCIE from "../../images/ucie.png";
   import DBUCI from "../../images/dbuci.jpeg";
   import UCISOC from "../../images/UCISOC.jpg";
+  import shopify from "../../images/shoppng.png";
 
   const experienceData = {
     basic_info: {
@@ -14,14 +15,13 @@
     experience: [
       {
         title: "Software Engineer Intern",
-        company: "UC Irvine School of Social Sciences - LDN Lab",
-        years: "December 2024 - March 2025",
-        mainTech: ["TypeScript", "Phaser", "Socket.IO", "PostgreSQL"],
+        company: "Shopify",
+        years: "September 2025 - April 2026",
+        mainTech: [""],
         technologies: [
-          "Led a team of 5 in the development of a multiplayer game from scratch using the Phaser framework and TypeScript, integrating PostgreSQL for user authentication and preference storage; reduced latency by 35% with Socket.IO",
-          "Deployed the application on Prolific for large-scale participant testing, collecting data from 500+ users",
+          "Incoming in Fall 2025!",
         ],
-        icon: UCISOC,
+        icon: shopify,
       },
       {
         title: "AI/ML Researcher",
@@ -35,9 +35,20 @@
         icon: DBUCI,
       },
       {
+        title: "Software Engineer Intern",
+        company: "UC Irvine School of Social Sciences - LDN Lab",
+        years: "December 2024 - March 2025",
+        mainTech: ["TypeScript", "Phaser", "Socket.IO", "PostgreSQL"],
+        technologies: [
+          "Led a team of 5 in the development of a multiplayer game from scratch using the Phaser framework and TypeScript, integrating PostgreSQL for user authentication and preference storage; reduced latency by 35% with Socket.IO",
+          "Deployed the application on Prolific for large-scale participant testing, collecting data from 500+ users",
+        ],
+        icon: UCISOC,
+      },
+      {
         title: "Software Programming Instructor",
         company: "CODE NINJAS",
-        years: "Sept 2024 - Present",
+        years: "Sept 2024 - June 2025",
         mainTech: ["JavaScript", "React"],
         technologies: [
           "Achieved a 90% student satisfaction rate by teaching young learners JavaScript through interactive coding lessons, simplifying complex concepts",
