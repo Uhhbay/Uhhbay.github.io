@@ -5,6 +5,7 @@
   import DBUCI from "../../images/dbuci.jpeg";
   import UCISOC from "../../images/UCISOC.jpg";
   import shopify from "../../images/Shopifylogo.webp";
+  import sces from "../../images/scesLogo.jpeg";
 
   const experienceData = {
     basic_info: {
@@ -22,6 +23,16 @@
           "Incoming in Fall 2025!",
         ],
         icon: shopify,
+      },
+      {
+        title: "Web Developer",
+        company: "UCI Student Center Events Services",
+        years: "May 2025 - Present",
+        mainTech: [""],
+        technologies: [
+          "Just Started!",
+        ],
+        icon: sces,
       },
       {
         title: "AI/ML Researcher",
