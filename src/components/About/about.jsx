@@ -14,16 +14,17 @@ export default function About() {
             <div className="w-[350px] h-[1px] bg-gray-300"></div>
             <div className="bg-gray-800 text-gray-100 p-6 rounded-sm mx-auto w-[400px] text-center sm:text-left sm:w-[500px] mt-28 xl:w-[800px] lg:w-[800px] md:w-[700px] border border-gray-600">
                 <p className="text-xl">
-                    I am currently a student pursuing a B.S. in Computer Science 
-                    at the University of California, Irvine. I transferred from El Camino College, where
-                    I earned a Associates in Mathematics. Computer Science is a passion of mine because
-                    it requires me to constantly learn and adapt to create new and effective solutions
-                    to problems.
+                I graduated from the University of California, Irvine with a Bachelor of Science 
+                in Computer Science. I previously earned an Associate's degree in Mathematics 
+                from El Camino College before transferring to UCI. I'm passionate about computer 
+                science because it challenges me to continuously learn, adapt, and develop innovative 
+                solutions to complex problems.
                 </p>
                 <p className="text-xl mt-6">
-                    Outside of my career, I love to play games, workout, try new foods, and
-                    pick up new skills. I love to play basketball, football, golf, table tennis, and
-                    tennis. I enjoy meeting new people and finding new hobbies.
+                Outside of my professional interests, I enjoy staying active and exploring new experiences. 
+                I'm an avid fan of sports including basketball, football, golf, tennis, table tennis, and 
+                pickleball. I also enjoy gaming, working out, trying new foods, and picking up new skills. 
+                I thrive on meeting new people and discovering new hobbies.
                 </p>
             </div>
         </motion.div>
