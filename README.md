@@ -11,7 +11,7 @@ Welcome to my personal portfolio website! This project is built from scratch usi
 ## 🚀 Live Demo
 
 Check out the live demo of the website:  
-[Live Portfolio](https://abhay-singh.dev)
+[abhay-singh.dev](https://abhay-singh.dev)
 
 ---
 
