@@ -45,7 +45,7 @@ export default function Navbar() {
           }
         });
       },
-      { threshold: 0.6 } // Adjust as needed for better section detection
+      { threshold: 0.3 } 
     );
 
     Object.values(sectionRefs.current).forEach((section) => {

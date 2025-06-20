@@ -92,7 +92,7 @@
       {
         title: "Valorant Scholarship Player",
         company: "UCI ESPORTS",
-        years: "April 2024 - Present",
+        years: "April 2024 - June 2025",
         mainTech: ["Python", "Django"],
         technologies: [
           "Committed 20 hours per week to scrimmages, teamwork, and strategy building, leading to a 20% performance increase",

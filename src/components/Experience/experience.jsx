@@ -33,7 +33,7 @@ const Experience = ({ resumeExperience, resumeBasicInfo }) => {
           textAlign: "center",
         }}
         verticalLineStyle={{ background: "#4A4A4A" }}
-        icon={<img src={icon} alt={`${title} icon`} className="h-10 w-10 xl-custom:h-16 xl-custom:w-16 xl-custom:pb-1 rounded-full" />} // Use the icon here
+        icon={<img src={icon} alt={`${title} icon`} className="h-10 w-10 xl-custom:h-16 xl-custom:w-16 xl-custom:pb-1 rounded-full" />} 
         key={i}
       >
         <h3 className="vertical-timeline-element-title text-lg font-bold font-ubuntu text-left max-w-[600px] xl-custom:max-w-[700px]">
@@ -54,7 +54,7 @@ const Experience = ({ resumeExperience, resumeBasicInfo }) => {
     <section id="resume" className="pb-5">
       <div className="max-w-[800px] mx-auto">
         <div className="text-center mb-8 z-20">
-          <h1 className="text-white text-5xl font-bebas pt-16 mb-6 z-20">
+          <h1 className="text-white text-5xl font-bebas pt-16 mb-6 flex flex-col items-center max-w-screen-lg mx-auto">
             {sectionName}
           </h1>
         </div>
